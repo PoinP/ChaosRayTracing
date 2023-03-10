@@ -13,7 +13,8 @@ public:
 		: m_Color(color) {}
 	virtual ~Drawable() {}
 
-	const Color& getColor() const { return m_Color; }
+	Color getColor() const { return m_Color; }
+	void setColor(Color color) { m_Color = color; }
 
 	virtual bool isHit(Point point) const = 0;
 	virtual Drawable* clone() const = 0;

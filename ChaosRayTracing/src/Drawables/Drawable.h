@@ -16,7 +16,7 @@ public:
 	const Color& getColor() const { return m_Color; }
 
 	virtual bool isHit(Point point) const = 0;
-	virtual Drawable* clone() = 0;
+	virtual Drawable* clone() const = 0;
 
 private:
 	Color m_Color;

@@ -45,7 +45,7 @@ bool Triangle::isHit(Point p) const
     return u > 0 && v > 0 && (u + v) <= 1;
 }
 
-Drawable* Triangle::clone()
+Drawable* Triangle::clone() const
 {
     return new Triangle(*this);
 }

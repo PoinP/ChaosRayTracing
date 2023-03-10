@@ -11,7 +11,7 @@ public:
 	Circle(Point center, unsigned radius, Color color);
 
 	bool isHit(Point coord) const override;
-	Circle* clone() override;
+	Circle* clone() const override;
 
 private:
 	unsigned m_Radius;

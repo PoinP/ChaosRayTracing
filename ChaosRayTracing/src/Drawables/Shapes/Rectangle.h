@@ -11,7 +11,7 @@ public:
 	Rectangle(Point center, unsigned width, unsigned height, Color color);
 
 	virtual bool isHit(Point point) const override;
-	virtual Drawable* clone() override;
+	virtual Drawable* clone() const override;
 
 private:
 	int m_SideX;

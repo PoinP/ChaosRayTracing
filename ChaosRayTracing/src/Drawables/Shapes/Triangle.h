@@ -14,7 +14,7 @@ public:
 	Triangle(Point edge1, Point edge2, Point edge3, Color color);
 
 	virtual bool isHit(Point point) const override;
-	virtual Drawable* clone() override;
+	virtual Drawable* clone() const override;
 
 private:
 	Point m_Edges[3];

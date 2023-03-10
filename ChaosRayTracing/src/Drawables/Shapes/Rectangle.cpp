@@ -18,7 +18,7 @@ bool Rectangle::isHit(Point point) const
     return xDiff * 2 <= m_SideX && yDiff * 2 <= m_SideY;
 }
 
-Drawable* Rectangle::clone()
+Drawable* Rectangle::clone() const
 {
     return new Rectangle(*this);
 }

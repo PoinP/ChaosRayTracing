@@ -18,7 +18,7 @@ bool Circle::isHit(Point coord) const
 	return distanceSquared <= ((long long)m_Radius * m_Radius);
 }
 
-Circle* Circle::clone()
+Circle* Circle::clone() const
 {
 	return new Circle(*this);
 }

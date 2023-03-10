@@ -14,8 +14,8 @@ public:
 	virtual Drawable* clone() const override;
 
 private:
-	int m_SideX;
-	int m_SideY;
+	int m_Width;
+	int m_Height;
 };
 
 #endif // !RECTANGLE_H
